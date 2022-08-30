@@ -56,7 +56,13 @@
             </div>
         </div>
         
-        <div class="direction"></div>
+        <div class="direction">
+            <div class="notice">
+                <img class= "noticeImg" src="./img/notice.png"/>
+                <div class="noticeText">&emsp;&emsp;2번 이상 받은 태그는 색이 채워져요.</div>
+            </div>
+            <div class="share">공유하기</div>
+        </div>
     </div>
 </body>
 <style>
@@ -81,21 +87,6 @@
         align-content:space-around;
     }
 
-    .part1{
-        display: flex;
-        flex:0.8;
-    }
-    .part2{
-        display: flex;
-        flex:1.3;
-    }
-
-    .xIcon{
-        position:absolute;
-        width: 5%;
-        margin-top: 4%;
-        margin-left:83%;
-    }
     .mainText{
         margin-top: 10%;
         font-size:20px;
@@ -111,7 +102,7 @@
         display: flex;
         flex:6;
         flex-direction: column;
-        background-color: aqua;
+        /* background-color: aqua; */
         /* margin-top:10%; */
         margin:5%;
     }
@@ -119,13 +110,14 @@
         display: flex;
         flex-direction: column;
         /* background-color: rgb(137, 226, 140); */
-        margin-bottom: 10%;
+        margin-bottom: 15%;
     }
     .rowText{
         display: flex;
         margin-bottom: 3%;
         font-family: 'Noto Sans KR';
         font-size: 15px;
+        color:white;
     }
     .rowTag{
         display: flex;
@@ -134,7 +126,7 @@
     }
     .eachTag{
         display:flex;
-        font-size: 11px;
+        font-size: 13px;
         font-family: 'GmarketSansMedium';
         background-color: rgba(255, 172, 75, 1);
         border-radius: 15px 15px;
@@ -145,14 +137,39 @@
         align-items: center;
         margin-bottom : 4%;
     }
-    .subText{
-        font-family: 'Noto Sans KR';
-        text-align:left;
-        font-size: 8pt;
-        margin-left:7%;
-        margin-bottom: 5%;
-        color:rgba(120, 120, 120, 1);
+    .direction{
+        display: flex;
+        flex:1.5;
+        flex-direction: column;
+        align-items: center;
     }
-   
-  
+
+    .notice{
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        /* background-color:teal; */
+        
+    }
+    .noticeImg{
+        position:absolute;
+        width: 5%;
+        margin-top: 1%;
+    }
+    .noticeText{
+        font-family: 'Noto Sans KR';
+        font-size: 12px;
+        color:white;
+
+    }
+    .share{
+        font-family: 'GmarketSansMedium';
+        font-size: 20px;
+        margin-top: 5%;
+        color:rgba(222, 210, 249, 1);
+        background-color: rgba(222, 210, 249, 1);
+
+    }
+    
+    
 </style>
