@@ -24,66 +24,83 @@
                         </div>
                         <div class="tagMessage">
                             <div class="temp">
-                                <span class="tag">
-                                    <div>#태그선택</div>
-                                </span>
-    
-                                <text class='subText'>
-                                은빈(이)는</text>
+                                <div class="tagSpace">
+                                    <span class="tag">
+                                        <div>#태그선택</div>
+                                    </span>
+
+                                </div>
+                                <div class="textSpace">
+                                    <div class='subText'>
+                                    은빈(이)는</div>
+                                </div>
                             </div>
                             
                             <div class="temp">
-                                <text class='subText'>
-                                    정말 </text>
+                                <div class="textSpace">
+                                    <div class='subText'>
+                                        정말 </div>
+                                </div>
                 
+                                <div class="tagSpace">
                                     <span class="tag">
                                         <div>#태그선택</div>
                                     </span>
+
+                                </div>
                                 
-                                <text class='subText'>
-                                        사람이야.</text>
+                                <div class="textSpace">
+                                    <div class='subText'>
+                                            사람이야.</div>
+                                     </div>
                             </div>
         
                             <div class="temp">
-                                <text class='subText'>
-                                    나는 </text>
-                
-                                <text class='subText'>
-                                    은빈(이)의 </text>
-        
+                                <div class="textSpace">
+                                    <div class='subText'>
+                                        나는 </div>
+                                </div>
+                                
+                                <div class="textSpace">
+                                    <div class='subText'>
+                                        은빈(이)의 </div>
+                                </div>
+                                
+                                <div class="tagSpace">
                                     <span class="tag">
                                         <div>#태그선택</div>
                                     </span>
+                                </div>
                             </div>
         
                             <div class="temp">
-                                <span class="tag">
-                                    <div>#태그선택</div>
-                                </span>
-                                <text class='subText'>
-                                모습이 좋아.</text>
+                                <div class="tagSpace">
+                                    <span class="tag">
+                                        <div>#태그선택</div>
+                                    </span>
+                                </div>
+                                <div class="textSpace">
+                                    <div class='subText'>
+                                    모습이 좋아.</div>
+                                </div>
                             </div>
 
                         </div> 
                     
                     
                         <div class="writeMessage">
-                        생일에나 할 수 있는 얘기를 오늘 해보네! <br>
-                        낯간지럽지만 꼭 해주고 싶은 말이야.     <br>
-                        매일이 생일처럼 특별했으면 좋겠어.      <br>
-                        오늘도 해피 언버스데이 :)              
+                            <div>생일에나 할 수 있는 얘기를 오늘 해보네! </div>
+                            <div>낯간지럽지만 꼭 해주고 싶은 말이야.</div> 
+                            <div>매일이 생일처럼 특별했으면 좋겠어.</div> 
+                            <div>오늘도 해피 언버스데이 :)  </div>            
+                        </div>
 
 
                     </div>
                 </div>
                 
-
-                </div>
                 <div class='complete'>
-                    <div>
-
                         완성하기
-                    </div>
                 </div>
             
     </div>
@@ -107,8 +124,8 @@
         padding-right: 10px;
         top: 0;
         left: 0;
-        /* align-items: center; */
-        align-content:space-around;
+        /* justify-content: ce; */
+        /* align-content:center; */
     }
 
     .mainText{
@@ -131,26 +148,13 @@
         flex-direction: column;
         position:relative;
         margin-bottom: 20%;
-        /* background-image: url('./img/_.png');
-        background-size: contain;
-        background-repeat: no-repeat; */
-        /* background-position: center; */
-        /* height: auto; */
         margin-left: 7%;
         margin-right: 7%;
-        
-        /* flex:3; */
-        /* background-color: darkcyan; */
     }
 
     .yelloBox img{
-        /* display:flex; */
         width:100%;
         height: 100%;
-
-        /* position:absolute; */
-        /* top:0;
-        left:0; */
     }
 
     
@@ -177,13 +181,8 @@
         font-family:'PyeongChangPeace-Light';
         font-size: 17pt;
         font-weight:bold;
-        
-        /* position:absolute; */
         text-align: left;
-        
-        /* background-color: darkorange; */
         color:aqua;
-        /* color: rgba(201, 102, 211, 1); */
         
     }
     
@@ -192,58 +191,73 @@
         flex-direction: column;
         /* background-color: darkgoldenrod; */
         flex:2;
-        padding: 7%;
+        padding-left: 7%;
+        padding-right: 7%;
+        padding-top:2%;
+        padding-bottom: 2%;
         justify-content: center;
         /* align-items: stretch; */
+        justify-content: space-evenly;
         
-    }
-    .writeMessage{
-        display: flex;
-        flex:1;
-        background-color: white;
-        padding:5%;
-        text-align: left;
-        font-family: 'Noto Sans KR';
-        font-size: 8pt;
     }
     .temp{
         display: flex;
         justify-content: space-around;
-        margin-top:5%;
+        /* background-color: #393939; */
+    }
+    .tagSpace{
+        display: flex;
+        /* flex-direction: column; */
+        width: 53%;
+        margin-bottom: 5%;
+        /* background-color: aquamarine; */
+    }
+    .textSpace{
+        margin-top: 2%;
     }
     .subText{
         font-family: 'PyeongChangPeace-Light';
         font-size: 9pt;
+        /* background-color: beige; */
     }
     .tag{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-family: 'Noto Sans KR';
+        font-size: 8pt;
         background-color: black;
-        border-radius: 10%;
-        padding-left: 10%;
-        padding-right:10%;
+        border-radius: 20px 20px;
+        width: 100%;
+        height: 145%;
+        color:white;
 
     }
     
-    .tag>div{
-        background-color: black;
-        color: white;
-        font-family: 'Manrope';
-        font-size: 8pt;
-        /* margin:10%; */
+    .writeMessage{
+        display: flex;
+        flex:1;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: white;
+        padding:5%;
+        text-align: left;
+        font-family: 'Noto Sans KR';
+        font-size: 7.5pt;
     }
 
     .complete{
+        display: flex;
+        font-family: 'GmarketSansMedium';
+        font-size: 20px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+        width: 40%;
+        border-radius: 40px 40px 40px 40px ;
+        border-style: solid;
+        border-width: 2px thin;
+        border-color: rgba(222, 210, 249, 1);
         color:rgba(222, 210, 249, 1);
-        font-family: 'Manrope';
-        font-size:13pt;
-        text-align: center;
-        margin-top : 5%;
-        margin-bottom: 9%;
     }
-    /* .complete>div{
-        background-color: rgba(222, 210, 249, 1);
-        border-radius: 40%;
-        height: 2px;
-        width:auto;
-    } */
 </style>

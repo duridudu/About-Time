@@ -1,45 +1,32 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="https://fonts.googleapis.com/css?family=Manrope&display=swap" rel="stylesheet" /> 
-        <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     </head>
 <body>
     <div class= 'main'>
-                <div class='mainText'>
+        <img src="./img/back.png" class="backBtn"/>
+            <div class='mainText'>
                 그 사람을 깜짝 놀래켜줄<br>
-                카드를 선택하세요
-                </div>
-                <div class="cards">
+                카드를 선택해주세요.
+            </div>
+            <div class="cards">
                     <div class="card-1st">
-                        <div class="card">
-                            <img class="card" src="./img/_.png">
-                        </div>
-                        <div class="card">
-                            <img src="./img/orange.png">
-                        </div>
+                        <img class="card" src="./img/_.png">
+                        <img class="card" src="./img/orange.png">
                     </div>
                     
-                    <div class="card-2nd">
-                        <div class="card">
-                            <img src="./img/white.svg">
-                        </div>
-                        <div clas="card">
-                            <img src="./img/pink.png">
-                        </div>
+                    <div class="card-1st">
+                        <img class="card" src="./img/newwhite.png">
+                        <img class="card" src="./img/pink.png">
                     </div>
-                </div>
-                
-
-                </div>
-                <div class='complete'>
-                    <div>
-                        
-                    </div>
-                </div>
+            </div>
+            <div class="part2">
+            </div>  
+            <!-- </div> -->
     </div>
 </body>
 <style>
@@ -63,65 +50,47 @@
         /* align-items: center; */
         align-content:space-around;
     }
-
+    .backBtn{
+        width:3.5%;
+    }
     .mainText{
+        display: flex;
         width:100%;
         flex:1;
-        /* text-align:center; */
-        margin-top: 25px;
-        /* background-color: darkblue; */
         text-align: center;
-        /* align-items: center; */
-        /* vertical-align:text-top; */
+        justify-content:center;
+        align-items: center;
         font-size:15px;
-        font-family:'Manrsope';
+        font-family:'Noto Sans KR' ;
         color:#ffffff;
+        /* background-color: lightblue; */
+        margin-bottom: 5%;
     }
 
     .cards{
         display: flex;
-        background-color: rgba(250, 233, 82, 1);
+        /* background-color: darkblue; */
         flex-direction: column;
-        /* margin-top: 10%; */
-        /* margin-bottom: 40%; */
-        /* margin-right:100%; */
-        /* width: 100%; */
-        flex:9;
-        /* padding: 7%; */
-        border-radius:10px;
+        flex:5;
     }
     
     .card-1st{
         display:flex;
         flex:1;
-        background-color: coral;
+        /* background-color: coral; */
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
         
     }
 
     .card {
-        width: 100%;
-    }
-    
-    .card-1st > img{
-        /* background-color: aqua; */
-        width:100%;
-        height: auto;
+        width: 48.5%;
+        height: fit-content;
     }
 
-    .card-2nd{
-        display:flex;
-        flex:1;
-        background-color: cadetblue;
-        flex-direction: row;
-        justify-content: space-evenly;
+    .part2{
+        display: flex;
+        flex:1.5;
     }
 
-    .card-2nd > img{
-        display:flex;
-        width:100%;
-        height:auto;
-    }
-    
 </style>
