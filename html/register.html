@@ -1,0 +1,141 @@
+<!DOCTYPE html><html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Manrope&display=swap" rel="stylesheet" /> 
+        <link href="https://fonts.googleapis.com/css?family=Sandoll+GyeokdongG2&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Sandoll+Gaehwa&display=swap" rel="stylesheet" />
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    </head>
+<body>
+    <div class= 'main'>
+        <text class='mainText'>
+            가입하고<br>
+            364일의 언버스데이<br>
+            즐기기👋
+        </text>
+        
+        <div class="total">
+            <!-- 아이디 비번 입력 -->
+            <div class="info">
+                <!-- 아이디 비번 -->
+                <div class = "numAndpass">
+                    <text class="infoText">휴대폰 번호</text>
+                    <form action="" method="">
+                        <input type="text" class="number" placeholder="010-1234-5678" />
+                    </form>
+                    <!-- <div id='rectangle10' class='rectangle10'></div> -->
+                    <text class="infoText">비밀번호</text>
+                    <form action="" method="">
+                        <input type="text" class="number" placeholder="비밀번호를 입력하세요." />
+                    </form>
+                    <!-- <div id='rectangle10' class='rectangle10'></div> -->
+                </div>
+                <button class = "register">로그인</button>
+            </div>
+            <br>
+            <div class="login">
+                <text class="texts">이미 계정이 있다면?</text>
+                <a href="" target="" class="loginText">로그인하기</a>
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    .main {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        flex-grow: 1;
+        background-color:#393939;
+        position:relative;
+        /* padding:15px; */
+        position: fixed;
+        overflow: hidden;
+        padding-top: 35px;
+        padding-left: 10px;
+        padding-right: 10px;
+        top: 0;
+        left: 0;
+        /* align-items: center; */
+        align-content:space-around;
+        /* justify-content: space-between; */
+    }
+    .mainText{
+        width:100%;
+        text-align:left;
+        margin-left: 10px;
+        vertical-align:text-top;
+        font-size:23px;
+        font-family:Manrope;
+        color:#ffffff;
+    }
+    .total{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-grow: 3;
+        flex-direction: column;
+        align-content:space-between;
+        /* background-color: antiquewhite; */
+        /* background-color: beige; */
+ 
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin-top: 10px;
+    }
+    .infoText{
+        color:#91d7e0;
+        font-family: 'Manrope';
+    }
+    .numAndpass{
+        display:flex;
+        flex-direction: column;
+        /* flex-grow: 0; */
+        width : 100%;
+        align-content:stretch;
+        margin-bottom:15px;
+       /* background-color: darkolivegreen; */
+    }
+    .number
+    {
+        border-radius:10px;
+        width:100%;
+        height:36px;
+        /* margin-left: 10px; */
+        background-color:#ffffff;
+        border:1px solid #c5c5c5;
+        /* top:26px; */
+        left:0px;
+        margin-bottom:15px;
+        /* position:absolute; */
+    }
+    .register{
+        border-radius:20px;
+        /* margin : auto; */
+        width: 50%;
+        height: 36px;
+        background-color: #ded2f9;
+        margin-top:10px;
+    }
+    .texts{
+        color: white;
+        font-size: 13px;
+    }
+    .login{
+        position: absolute;
+        font-size:13px;
+        bottom: 0;
+        /* background-color: blue; */
+        align-self: center;
+        margin-bottom: 10px;
+        /* justify-content:flex-end; */
+        
+    }
+    .loginText{
+        color: #91d7e0;
+    }
+</style>

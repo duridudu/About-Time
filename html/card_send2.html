@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="'https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Light.woff2'" rel="stylesheet" format="woff2" /> 
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+<body>
+    <div class= 'main'>
+                <div class='mainText'>
+                누구에게 누가 보내는 카드인가요?
+                </div>
+                <div class="yelloBox">
+                    <div>
+                        <img class="card" src="./img/_.png">
+                    </div>
+                    
+  
+                </div>
+                
+
+                </div>
+                <div class='complete'>
+                    <div>
+                        뒷장 쓰기
+                    </div>
+                </div>
+            
+    </div>
+</body>
+<style>
+     .main {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        /* position: relative; */
+        width: 100%;
+        height: 100vh;
+        flex-grow: 1;
+        background-color:#393939;
+        position:relative;
+        /* padding:15px; */
+        position: fixed;
+        overflow: hidden;
+        padding-top: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+        top: 0;
+        left: 0;
+        /* align-items: center; */
+        align-content:space-around;
+    }
+
+    .mainText{
+        /* width:100%; */
+        /* flex:1; */
+        text-align:center;
+        margin-top: 10%;
+        margin-bottom: 20%;
+        vertical-align:text-top;
+        font-size:15px;
+        font-family:'Noto Sans KR';
+        /* background-color: forestgreen; */
+        margin-left:7%;
+        margin-right:7%;
+        color:#ffffff;
+    }
+
+    .yelloBox{
+        display: flex;
+        flex-direction: column;
+        position:relative;
+        margin-bottom: 20%;
+        /* background-image: url('./img/_.png');
+        background-size: contain;
+        background-repeat: no-repeat; */
+        /* background-position: center; */
+        /* height: auto; */
+        margin-left: 7%;
+        margin-right: 7%;
+        
+        /* flex:3; */
+        /* background-color: darkcyan; */
+    }
+
+    .yelloBox img{
+        /* display:flex; */
+        width:100%;
+        height: 100%;
+
+        /* position:absolute; */
+        /* top:0;
+        left:0; */
+    }
+
+    
+    .insideYellow{
+        /* background-color: chartreuse; */
+        display: flex;
+        /* object-fit: cover; */
+        width: 90%;
+        height: 90%;
+        top:0;
+        left:0;
+        flex-direction: column;
+        flex:2;
+        position:absolute;
+        padding:5%;
+        text-align: center;
+        
+        /* justify-content: space-between; */
+    }
+    .personName{
+        display: flex;
+        flex:0.7;
+        margin-top: 6%;
+        font-family:'PyeongChangPeace-Light';
+        font-size: 17pt;
+        font-weight:bolder;
+        /* position:absolute; */
+        text-align: left;
+        
+        /* background-color: darkorange; */
+        color:aqua;
+        /* color: rgba(201, 102, 211, 1); */
+        
+    }
+    
+    .tagMessage{
+        display: flex;
+        flex-direction: column;
+        /* background-color: darkgoldenrod; */
+        flex:2;
+        padding: 7%;
+        justify-content: center;
+        /* align-items: stretch; */
+        
+    }
+    .writeMessage{
+        display: flex;
+        flex:1;
+        background-color: white;
+        padding:5%;
+        text-align: left;
+        font-family: 'Noto Sans KR';
+        font-size: 8pt;
+    }
+    .temp{
+        display: flex;
+        justify-content: space-around;
+        margin-top:5%;
+    }
+    .subText{
+        font-family: 'PyeongChangPeace-Light';
+        font-size: 9pt;
+    }
+    .tag{
+        font-family: 'Noto Sans KR';
+        background-color: black;
+        border-radius: 10%;
+        padding-left: 10%;
+        padding-right:10%;
+
+    }
+    
+    .tag>div{
+        background-color: black;
+        color: white;
+        font-family: 'Manrope';
+        font-size: 8pt;
+        /* margin:10%; */
+    }
+
+    .complete{
+        color:rgba(222, 210, 249, 1);
+        font-family: 'Manrope';
+        font-size:13pt;
+        text-align: center;
+        margin-top : 5%;
+        margin-bottom: 9%;
+    }
+    /* .complete>div{
+        background-color: rgba(222, 210, 249, 1);
+        border-radius: 40%;
+        height: 2px;
+        width:auto;
+    } */
+</style>
