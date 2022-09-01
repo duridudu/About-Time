@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="'https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Light.woff2'" rel="stylesheet" format="woff2" /> 
+        <link href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Light.woff2" rel="stylesheet" format="woff2" /> 
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,25 +9,44 @@
     </head>
 <body>
     <div class= 'main'>
-                <div class='mainText'>
+        <div class="btn">
+            <img src="./img/back.png" class="backBtn"/>
+        </div>
+            <div class='mainText'>
                 누구에게 누가 보내는 카드인가요?
+            </div>
+            <div class="yelloBox">
+                <div>
+                    <img class="card" src="./img/cardFront.png">
                 </div>
-                <div class="yelloBox">
-                    <div>
-                        <img class="card" src="./img/_.png">
-                    </div>
                     
-  
+                <div class="insideYellow">
+                    <div class="write">
+                        <div class="toPerson">
+                            <div class="nameBox">
+                                    받는 사람
+                            </div>
+                            <div class="notice">3자 이내로 입력해주세요.</div>
+                        </div>
+                        <div class="fromPerson">
+                            <div class="nameBox">
+                                보내는 사람
+                            </div>
+                        </div>
+                    </div>
+
+                    
                 </div>
                 
-
-                </div>
-                <div class='complete'>
+            </div>
+                
+                <div class='writeBack'>
                     <div>
                         뒷장 쓰기
                     </div>
                 </div>
-            
+        </div>
+
     </div>
 </body>
 <style>
@@ -44,25 +63,30 @@
         /* padding:15px; */
         position: fixed;
         overflow: hidden;
-        padding-top: 30px;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-top:5%;
+        padding-left: 3%;
+        padding-right: 3%;
         top: 0;
         left: 0;
-        /* align-items: center; */
-        align-content:space-around;
+        align-items:center;
     }
-
+    .btn{
+        width:100%;
+        padding-left:10%;
+        padding-top: 5%;
+    }
+    .backBtn{
+        width:3.5%;
+    }
     .mainText{
-        /* width:100%; */
-        /* flex:1; */
+        display: flex;
+        flex-direction: row;
+        flex:0.3;
         text-align:center;
-        margin-top: 10%;
-        margin-bottom: 20%;
+        align-items: center;
         vertical-align:text-top;
-        font-size:15px;
+        font-size:16px;
         font-family:'Noto Sans KR';
-        /* background-color: forestgreen; */
         margin-left:7%;
         margin-right:7%;
         color:#ffffff;
@@ -71,30 +95,18 @@
     .yelloBox{
         display: flex;
         flex-direction: column;
+        flex:1;
         position:relative;
-        margin-bottom: 20%;
-        /* background-image: url('./img/_.png');
-        background-size: contain;
-        background-repeat: no-repeat; */
-        /* background-position: center; */
-        /* height: auto; */
+        /* margin-bottom: 20%; */
         margin-left: 7%;
         margin-right: 7%;
-        
-        /* flex:3; */
-        /* background-color: darkcyan; */
     }
-
+    
     .yelloBox img{
-        /* display:flex; */
         width:100%;
         height: 100%;
-
-        /* position:absolute; */
-        /* top:0;
-        left:0; */
     }
-
+    
     
     .insideYellow{
         /* background-color: chartreuse; */
@@ -105,86 +117,91 @@
         top:0;
         left:0;
         flex-direction: column;
-        flex:2;
+        flex:5;
         position:absolute;
         padding:5%;
         text-align: center;
         
         /* justify-content: space-between; */
     }
-    .personName{
-        display: flex;
-        flex:0.7;
-        margin-top: 6%;
-        font-family:'PyeongChangPeace-Light';
-        font-size: 17pt;
-        font-weight:bolder;
-        /* position:absolute; */
-        text-align: left;
-        
-        /* background-color: darkorange; */
-        color:aqua;
-        /* color: rgba(201, 102, 211, 1); */
-        
-    }
-    
-    .tagMessage{
+    .write{
         display: flex;
         flex-direction: column;
-        /* background-color: darkgoldenrod; */
-        flex:2;
-        padding: 7%;
+        flex: 1;
+    }
+    .toPerson{
+        display: flex;
+        flex-direction: column;
         justify-content: center;
-        /* align-items: stretch; */
-        
+        align-items: flex-start;
+        flex: 1;
+        margin-top: 10%;
+        /* background-color: aquamarine; */
     }
-    .writeMessage{
+    .fromPerson{
         display: flex;
-        flex:1;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        flex: 1;
+        margin-bottom: 15%;
+        /* background-color: aquamarine; */
+    }
+    .to{
+        display: flex;
+        flex-direction: column;
+        /* height: 100%; */
+        justify-content: flex-start;
+    }
+    .notice{
+        display: flex;
+        flex-direction: row;
+        /* flex:0.4; */
+        color:rgba(0, 0, 0, 0.5);
+        font-family: 'Noto Sans KR';
+        font-size: 7px;
+        margin-top: 1%;
+    }
+    .nameBox{
+        display: flex;
+        /* flex:1; */
+        width:35%;
+        height: 18%;
+        flex-direction: column;
         background-color: white;
-        padding:5%;
+        border-color: rgba(0, 0, 0, 0.5);
+        border-radius: 5px 5px;
+        border-style:solid;
+        border-width: 0.01px;
+        padding-left: 5%;
+        padding-right: 5%;
         text-align: left;
+        justify-content: center;
         font-family: 'Noto Sans KR';
-        font-size: 8pt;
+        font-size: 11pt;
+        color: rgba(0, 0, 0, 0.5);
+        /* margin-bottom: 2%; */
     }
-    .temp{
+
+    .writeBack{
         display: flex;
-        justify-content: space-around;
-        margin-top:5%;
+        flex-direction: row;
+        flex:0.1;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20%;
+        margin-top: 5%;
+        width: 40%;
+        border-radius: 50% / 50% ;
+        border-style: solid;
+        border-width: 3px thin;
+        border-color: rgba(222, 210, 249, 1);
+        /* background-color: yellowgreen; */
     }
-    .subText{
-        font-family: 'PyeongChangPeace-Light';
-        font-size: 9pt;
-    }
-    .tag{
-        font-family: 'Noto Sans KR';
-        background-color: black;
-        border-radius: 10%;
-        padding-left: 10%;
-        padding-right:10%;
-
-    }
-    
-    .tag>div{
-        background-color: black;
-        color: white;
-        font-family: 'Manrope';
-        font-size: 8pt;
-        /* margin:10%; */
-    }
-
-    .complete{
+    .writeBack > div{
+        /* margin:2%; */
+        font-family: 'GmarketSansMedium';
+        font-size: 20px;
         color:rgba(222, 210, 249, 1);
-        font-family: 'Manrope';
-        font-size:13pt;
-        text-align: center;
-        margin-top : 5%;
-        margin-bottom: 9%;
     }
-    /* .complete>div{
-        background-color: rgba(222, 210, 249, 1);
-        border-radius: 40%;
-        height: 2px;
-        width:auto;
-    } */
 </style>

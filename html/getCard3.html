@@ -9,15 +9,12 @@
     </head>
 <body>
     <div class= 'main'>
-        <div class="btn">
-            <img src="./img/back.png" class="backBtn"/>
-        </div>
         <div class="texts">
             <div class='mainText'>
-                카드가 완성됐어요!
+               짜잔~ 축하받은 걸 축하해요!
             </div>
             <div class="subTexts">
-                링크를 전해주면 카드를 읽고 #태그를 간직할 수 있어요.
+                카드를 저장하면 내가 받은 #태그도 모아볼 수 있어요.
             </div>
         </div>
             <div class="yelloBox">
@@ -106,12 +103,10 @@
 
                     </div>
                 </div>
-                <div class="notice">앞면 보기 ></div>
                 
-                <div class='complete'>
-                    <div>
-                        링크 복사하기
-                    </div>
+                <div class="btns">
+                    <div class="btn">카드 보내기</div>
+                    <div class="btn">내 카드함</div>
                 </div>
             </div>
 
@@ -131,42 +126,33 @@
         /* padding:15px; */
         position: fixed;
         overflow: hidden;
-        padding-top:5%;
+        padding-top:10%;
         padding-left: 3%;
         padding-right: 3%;
         top: 0;
         left: 0;
         align-items:center;
     }
-    .btn{
-        width:100%;
-        padding-left:10%;
-        padding-top: 5%;
-    }
-    .backBtn{
-        width:3.5%;
-    }
 
     .texts{
         display: flex;
         flex-direction: column;
-        flex:0.3;
+        flex:0.5;
         text-align:center;
         align-items: center;
         vertical-align:text-top;
-        /* background-color; */
     }
     .mainText{
         font-size:19px;
         font-family:'Noto Sans KR';
         margin-left:7%;
         margin-right:7%;
+        margin-bottom: 2%;
         color:#ffffff;
     }
     .subTexts{
         font-size:14px;
         font-family:'Noto Sans KR';
-        margin-top:5%;
         color:#ffffff;
     }
     .yelloBox{
@@ -174,7 +160,7 @@
         flex-direction: column;
         flex:1;
         position:relative;
-        /* margin-bottom: 20%; */
+        margin-top:2%;
         margin-left: 7%;
         margin-right: 7%;
     }
@@ -186,20 +172,16 @@
     
     
     .insideYellow{
-        /* background-color: chartreuse; */
         display: flex;
-        /* object-fit: cover; */
         width: 90%;
         height: 90%;
         top:0;
         left:0;
         flex-direction: column;
-        flex:5;
+        flex:6;
         position:absolute;
         padding:5%;
         text-align: center;
-        
-        /* justify-content: space-between; */
     }
     .personName{
         display: flex;
@@ -277,37 +259,39 @@
         margin-bottom: 2%;
     }
     
-    .notice{
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        margin-right: 18%;
-        margin-top:3%;
-        justify-content: flex-end;
-        color:white;
-        font-family: 'Noto Sans KR';
-        font-size: 10px;
-    }
 
-    .complete{
+    .btns{
+        display: flex;
+        flex-direction: column;
+        flex:1;
+        position:relative;
+        /* background-color: blue; */
+        width: 45%;
+        height: 30%;
+        /* background-color: blue; */
+        align-items: center;
+        justify-content: center;
+        margin-top: 5%;
+        margin-bottom: 15%;
+        font-family: 'GmarketSansMedium';
+        font-size: 25px;
+        color:rgba(222, 210, 249, 1);
+        
+    }
+    .btn{
         display: flex;
         flex-direction: row;
-        flex:0.1;
+        /* flex:1; */
+        margin: 5%;
+        border-radius: 50% / 50%;
+        border-style: solid;
+        border-width: 3px;
+        border-color: rgba(222, 210, 249, 1);
+        width: 100%;
+        height: 100%;
         justify-content: center;
         align-items: center;
-        margin-bottom: 20%;
-        margin-top: 5%;
-        width: 40%;
-        border-radius: 50% / 50% ;
-        border-style: solid;
-        border-width: 3px thin;
-        border-color: rgba(222, 210, 249, 1);
-        /* background-color: yellowgreen; */
-    }
-    .complete > div{
-        /* margin:2%; */
-        font-family: 'GmarketSansMedium';
-        font-size: 20px;
-        color:rgba(222, 210, 249, 1);
+
+
     }
 </style>

@@ -9,6 +9,9 @@
     </head>
 <body>
     <div class= 'main'>
+        <div class="btn">
+            <img src="./img/back.png" class="backBtn"/>
+        </div>
             <div class='mainText'>
                 그 사람을 생각하며 채워주세요.
             </div>
@@ -111,7 +114,8 @@
                         완성하기
                     </div>
                 </div>
-            
+            </div>
+
     </div>
 </body>
 <style>
@@ -135,7 +139,14 @@
         left: 0;
         align-items:center;
     }
-
+    .btn{
+        width:100%;
+        padding-left:10%;
+        padding-top: 5%;
+    }
+    .backBtn{
+        width:3.5%;
+    }
     .mainText{
         display: flex;
         flex-direction: row;
@@ -188,7 +199,7 @@
         flex:0.7;
         margin-top: 6%;
         font-family:'PyeongChangPeace-Light';
-        font-size: 17pt;
+        font-size: 20pt;
         font-weight:bold;
         text-align: left;
         color:rgba(201, 102, 211, 1);
@@ -271,6 +282,7 @@
     .notice{
         display: flex;
         flex-direction: row;
+        /* flex:0.4; */
         justify-content: flex-start;
         color:rgba(0, 0, 0, 0.5);
         font-family: 'Noto Sans KR';
@@ -280,15 +292,15 @@
     .complete{
         display: flex;
         flex-direction: row;
-        flex:0.2;
+        flex:0.1;
         justify-content: center;
         align-items: center;
-        margin-bottom: 10%;
-        margin-top: 8%;
+        margin-bottom: 20%;
+        margin-top: 5%;
         width: 40%;
         border-radius: 50% / 50% ;
         border-style: solid;
-        border-width: 2px thin;
+        border-width: 3px thin;
         border-color: rgba(222, 210, 249, 1);
         /* background-color: yellowgreen; */
     }
