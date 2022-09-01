@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="'https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Light.woff2'" rel="stylesheet" format="woff2" /> 
+        <link href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Light.woff2" rel="stylesheet" format="woff2" /> 
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +14,7 @@
             </div>
             <div class="yelloBox">
                 <div>
-                    <img class="card" src="./img/_.png">
+                    <img class="card" src="./img/yellowBack.png">
                 </div>
                     
                 <div class="insideYellow">
@@ -91,19 +91,25 @@
                         </div> 
                     
                     
-                        <div class="writeMessage">
+                         <div class="writeMessage" >
                             <div>생일에나 할 수 있는 얘기를 오늘 해보네! </div>
                             <div>낯간지럽지만 꼭 해주고 싶은 말이야.</div> 
                             <div>매일이 생일처럼 특별했으면 좋겠어.</div> 
                             <div>오늘도 해피 언버스데이 :)  </div>            
+                            <div class="numCnt"> 
+                                <div>80/90</div>
+                            </div>
                         </div>
+                        <div class="notice">최소 1자 이상 입력해주세요.</div>
 
 
                     </div>
                 </div>
                 
                 <div class='complete'>
+                    <div>
                         완성하기
+                    </div>
                 </div>
             
     </div>
@@ -122,25 +128,24 @@
         /* padding:15px; */
         position: fixed;
         overflow: hidden;
-        padding-top: 30px;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-top:5%;
+        padding-left: 3%;
+        padding-right: 3%;
         top: 0;
         left: 0;
-        /* justify-content: cen; */
-        /* align-content:center; */
+        align-items:center;
     }
 
     .mainText{
-        /* width:100%; */
-        /* flex:1; */
+        display: flex;
+        flex-direction: row;
+        flex:0.3;
         text-align:center;
-        margin-top: 10%;
-        margin-bottom: 20%;
+        align-items: center;
+        /* margin-bottom: 5%; */
         vertical-align:text-top;
-        font-size:15px;
+        font-size:18px;
         font-family:'Noto Sans KR';
-        /* background-color: forestgreen; */
         margin-left:7%;
         margin-right:7%;
         color:#ffffff;
@@ -149,17 +154,18 @@
     .yelloBox{
         display: flex;
         flex-direction: column;
+        flex:1;
         position:relative;
-        margin-bottom: 20%;
+        /* margin-bottom: 20%; */
         margin-left: 7%;
         margin-right: 7%;
     }
-
+    
     .yelloBox img{
         width:100%;
         height: 100%;
     }
-
+    
     
     .insideYellow{
         /* background-color: chartreuse; */
@@ -170,7 +176,7 @@
         top:0;
         left:0;
         flex-direction: column;
-        flex:2;
+        flex:5;
         position:absolute;
         padding:5%;
         text-align: center;
@@ -185,7 +191,7 @@
         font-size: 17pt;
         font-weight:bold;
         text-align: left;
-        color:aqua;
+        color:rgba(201, 102, 211, 1);
         
     }
     
@@ -194,8 +200,8 @@
         flex-direction: column;
         /* background-color: darkgoldenrod; */
         flex:2;
-        padding-left: 7%;
-        padding-right: 7%;
+        /* padding-left: 7%;
+        padding-right: 7%; */
         padding-top:2%;
         padding-bottom: 2%;
         justify-content: center;
@@ -205,23 +211,23 @@
     }
     .temp{
         display: flex;
-        justify-content: space-around;
-        /* background-color: #393939; */
+        justify-content: space-evenly;
     }
     .tagSpace{
         display: flex;
-        /* flex-direction: column; */
+        flex-direction: row;
+        align-items: center;
         width: 53%;
-        margin-bottom: 5%;
-        /* background-color: aquamarine; */
     }
     .textSpace{
-        margin-top: 2%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
     }
     .subText{
         font-family: 'PyeongChangPeace-Light';
-        font-size: 9pt;
-        /* background-color: beige; */
+        font-size: 10pt;
     }
     .tag{
         display: flex;
@@ -232,7 +238,9 @@
         background-color: black;
         border-radius: 20px 20px;
         width: 100%;
-        height: 145%;
+        height: 100%;
+        margin-top:6%;
+        margin-bottom: 6%;
         color:white;
 
     }
@@ -243,25 +251,51 @@
         flex-direction: column;
         justify-content: space-around;
         background-color: white;
-        padding:5%;
+        border-color: rgba(0, 0, 0, 0.5);
+        border-style:solid;
+        border-width: 0.01px;
+        padding-top:5%;
+        padding-left: 5%;
+        padding-right: 5%;
         text-align: left;
         font-family: 'Noto Sans KR';
-        font-size: 7.5pt;
+        font-size: 8pt;
+        margin-bottom: 2%;
+    }
+    .numCnt{
+        font-family: 'Noto Sans KR' ;
+        color:rgba(0, 0, 0, 0.5);
+        font-size: 8px;
+        margin-bottom:2%;
+    }
+    .notice{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        color:rgba(0, 0, 0, 0.5);
+        font-family: 'Noto Sans KR';
+        font-size: 9px;
     }
 
     .complete{
         display: flex;
-        font-family: 'GmarketSansMedium';
-        font-size: 20px;
+        flex-direction: row;
+        flex:0.2;
         justify-content: center;
         align-items: center;
-        margin-top: 5%;
+        margin-bottom: 10%;
+        margin-top: 8%;
         width: 40%;
         border-radius: 50% / 50% ;
         border-style: solid;
         border-width: 2px thin;
         border-color: rgba(222, 210, 249, 1);
+        /* background-color: yellowgreen; */
+    }
+    .complete > div{
+        /* margin:2%; */
+        font-family: 'GmarketSansMedium';
+        font-size: 20px;
         color:rgba(222, 210, 249, 1);
-        /* background-color: ; */
     }
 </style>
